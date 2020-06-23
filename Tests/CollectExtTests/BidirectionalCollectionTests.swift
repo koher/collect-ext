@@ -1,7 +1,7 @@
 import XCTest
 import CollectExt
 
-final class RandomAccessCollectionTests: XCTestCase {
+final class BidirectionalCollectionTests: XCTestCase {
     func testDropLastWhile() {
         XCTAssertEqual([2, 3, 5, 7, 11].dropLast(while: { $0 > 11}), [2, 3, 5, 7, 11])
         XCTAssertEqual([2, 3, 5, 7, 11].dropLast(while: { $0 > 7}), [2, 3, 5, 7])
